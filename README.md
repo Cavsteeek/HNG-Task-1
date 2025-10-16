@@ -1,19 +1,32 @@
+<<<<<<< HEAD
 # 🐱 HNG Task – Profile Endpoint (Express.js + Cat Facts API)
 
 This project is a simple RESTful API built with **Node.js** and **Express.js** that returns your profile details along with a random cat fact fetched from the [Cat Facts API](https://catfact.ninja/fact).  
 It was created as part of the **HNG Internship Task** to demonstrate API development, integration with a third-party service, and JSON response formatting.
+=======
+# HNG Task – Profile Endpoint (Express.js)
+
+This project is a simple RESTful API built with **Node.js** and **Express.js** that returns profile information and a random cat fact from the [Cat Facts API](https://catfact.ninja/fact).
+>>>>>>> 7f092c6d27f9f1cba4eebb75c9c56cdcada25994
 
 ---
 
 ## 🚀 Endpoint
+<<<<<<< HEAD
 
 **GET** `/me`
 
 ### ✅ Sample Response
+=======
+### `GET /me`
+
+**Response format:**
+>>>>>>> 7f092c6d27f9f1cba4eebb75c9c56cdcada25994
 ```json
 {
   "status": "success",
   "user": {
+<<<<<<< HEAD
     "email": "youremail@example.com",
     "name": "Your Full Name",
     "stack": "Node.js/Express"
@@ -205,3 +218,12 @@ You’re required to write a blog post (on **LinkedIn**, **Hashnode**, **Dev.to*
 - [LinkedIn](https://linkedin.com/in/<your-link>)
 
 ---
+=======
+    "email": "<your email>",
+    "name": "<your full name>",
+    "stack": "<your backend stack>"
+  },
+  "timestamp": "<current UTC time in ISO 8601 format>",
+  "fact": "<random cat fact>"
+}
+>>>>>>> 7f092c6d27f9f1cba4eebb75c9c56cdcada25994
