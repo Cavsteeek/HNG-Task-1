@@ -65,7 +65,7 @@ Create a `.env` file in the root directory and add the following environment var
 PORT=3000
 EMAIL=youremail@example.com
 NAME=Your Full Name
-STACK=Node.js/Express
+STACK=Your Backend Stack
 ```
 
 ---
@@ -75,7 +75,7 @@ STACK=Node.js/Express
 Start the development server:
 
 ```bash
-node server.js
+node server.js || npm start
 ```
 
 By default, it runs on port **3000** (or your custom port if specified in `.env`).
@@ -133,7 +133,7 @@ http://localhost:3000/me
 curl http://localhost:3000/me
 ```
 
-### 🟦 Option 3: Postman / Thunder Client
+### 🟦 Option 3: Postman
 
 Make a `GET` request to `/me` and check the JSON response.
 
@@ -146,6 +146,12 @@ If the Cat Facts API is unavailable, the endpoint still responds successfully wi
 ```json
 {
   "status": "success",
+  "user": {
+    "email": "youremail@example.com",
+    "name": "Your Full Name",
+    "stack": "Your Backend Stack"
+  },
+  "timestamp": "2025-10-15T14:20:45.123Z",
   "fact": "Could not fetch cat fact at this time."
 }
 ```
@@ -162,7 +168,6 @@ hng-profile-endpoint/
 ├── controller.js      # Handles fetching cat facts and building JSON response
 ├── routes.js          # Defines the /me route
 ├── server.js          # App entry point
-├── .env.example       # Example environment variable file
 ├── .env               # (Ignored) Actual environment file
 ├── package.json       # Dependencies and scripts
 └── README.md          # Documentation
@@ -172,7 +177,7 @@ hng-profile-endpoint/
 
 ## 🌐 Deployment
 
-You can deploy this API to any platform **except Vercel**, such as:
+You can deploy this API to any platform, such as:
 
 - [Railway.app](https://railway.app)
 - [Heroku](https://www.heroku.com)
