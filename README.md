@@ -16,7 +16,7 @@ This project is a simple RESTful API built with **Node.js** and **Express.js** t
   "user": {
     "email": "youremail@example.com",
     "name": "Your Full Name",
-    "stack": "Node.js/Express"
+    "stack": "Your Backend Stack"
   },
   "timestamp": "2025-10-15T14:20:45.123Z",
   "fact": "Cats sleep for around 70% of their lives."
