@@ -29,7 +29,7 @@ export const getDetails = async (res) => {
         console.error("Error fetching cat fact:", error.message);
 
         // Return a fallback response so the endpoint still works
-        return res.status(200).json({
+        res.status(200).json({
             status: "success",
             user: {
                 email: process.env.EMAIL,
